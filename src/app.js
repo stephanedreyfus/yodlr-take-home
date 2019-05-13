@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <body>
-        <h1>Yodlr Design Challenge</h1>
+        <h1>Welcome to Yodlr</h1>
         <p>
           <a href="/signup.html">Registration Page</a><br/>
           <a href="/admin.html">Admin Page</a>
