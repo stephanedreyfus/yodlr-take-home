@@ -1,17 +1,21 @@
 import React, { Component } from 'react'
-import { Switch, Route } from "react-router-dom";
+import { Route, NavLink, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <body>
         <h1>Welcome to Yodlr</h1>
+        <nav>
+          <NavLink exact to="/signup">Registration Page</NavLink>
+          <NavLink exact to="/admin">Admin Page</NavLink>
+        </nav>
         <Switch>
-          <Route exact path="/signup" render={() => <Signup />} />
-          <Route exact path="/admin" render={() => <Admin />} />
+          <Route exact path="/signup"
+                 render={(props) => <Signup {...props}/>} />
+          <Route exact path="/admin"
+                 render={(props) => <Admin {...props}/>} />
         </Switch>
-          <a href="/signup.html">Registration Page</a><br/>
-          <a href="/admin.html">Admin Page</a>
       </body>
     )
   }
