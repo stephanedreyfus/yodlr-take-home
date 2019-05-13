@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+import React, { Component } from 'react'
+
+class Signup extends Component {
+    render() {
+        return (
+            <div>
+                <!DOCTYPE html>
 <html>
 <head>
   <meta charset=utf-8>
@@ -15,3 +21,10 @@
   </p>
 </body>
 </html>
+
+            </div>
+        )
+    }
+}
+
+export default Signup;
